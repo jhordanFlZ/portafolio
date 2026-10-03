@@ -1,0 +1,11 @@
+:host { display: block; min-height: 100vh; }
+.site-header { align-items: center; display: flex; justify-content: space-between; margin: 0 auto; max-width: 1180px; padding: 28px 32px; position: relative; z-index: 5; }
+.brand { align-items: center; color: var(--ink); display: flex; gap: 12px; text-decoration: none; }
+.brand-mark { align-items: center; background: var(--accent); border-radius: 10px; color: #fff; display: flex; font-size: 13px; font-weight: 800; height: 36px; justify-content: center; width: 36px; }
+.brand-name { font-size: 17px; font-weight: 800; letter-spacing: -.03em; }.brand-name span { color: var(--accent); }
+.main-nav { align-items: center; display: flex; gap: 30px; }.main-nav a { color: var(--muted); font-size: 13px; font-weight: 600; text-decoration: none; transition: color .2s ease; }.main-nav a:hover { color: var(--ink); }
+.main-nav .nav-cta { background: var(--ink); border-radius: 999px; color: #fff; padding: 12px 17px; }.main-nav .nav-cta:hover { background: var(--accent); color: #fff; }.nav-cta span { color: var(--lime); margin-left: 5px; }
+.site-header::after { background: var(--line); bottom: 0; content: ''; height: 1px; left: 32px; opacity: .7; position: absolute; right: 32px; }
+.brand-mark { transition: border-radius .25s ease, transform .25s ease; }.brand:hover .brand-mark { border-radius: 50%; transform: rotate(-8deg); }
+.site-footer { color: var(--muted); display: flex; font-size: 12px; justify-content: space-between; margin: 0 auto; max-width: 1180px; padding: 28px 32px 34px; }
+@media (max-width: 720px) { .site-header { align-items: flex-start; flex-direction: column; gap: 18px; padding: 18px 20px 16px; }.site-header::after { left: 20px; right: 20px; }.main-nav { gap: 18px; max-width: 100%; overflow-x: auto; padding: 3px 0 8px; scrollbar-width: none; white-space: nowrap; }.main-nav::-webkit-scrollbar { display: none; }.main-nav a:not(.nav-cta) { display: inline; }.main-nav a { font-size: 11px; }.main-nav .nav-cta { padding: 9px 12px; }.site-footer { flex-direction: column; gap: 8px; padding: 24px 20px; } }
